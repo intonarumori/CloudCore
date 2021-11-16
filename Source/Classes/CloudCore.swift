@@ -128,6 +128,10 @@ open class CloudCore {
 		
 		// FIXME: unsubscribe
 	}
+    
+    public static func triggerManualPushIfNeeded() {
+        coreDataObserver?.triggerManualPushIfNeeded()
+    }
 	
     /// return the user's record name
     public static func userRecordName() -> String? {
